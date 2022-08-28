@@ -1,0 +1,14 @@
+
+{% load static %}
+
+{% block default %}
+
+
+<form action="" method="POST">{% csrf_token %}
+    {{form.media}}
+    {{ form.as_p }}
+</form>
+
+{% endblock default %}
+
+
